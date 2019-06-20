@@ -1,0 +1,179 @@
+
+TESTED ENDPOINTS:
+
+
+http://localhost:8080/listSpecies?limit=10
+
+response:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>List of Species</h1><hr>
+      <form action="listSpecies" method="get">
+        <p>Limit of species to show:</p>
+        <input type="number" name="limit">
+        <input type="submit" value="SEND">
+      </form><br>
+      <a href="/">Go Back Home</a><hr><h3>Result:</h3><ul><li>chelonoidis_abingdonii</li><li>bos_mutus</li><li>oryzias_latipes_hsok</li><li>mus_caroli</li><li>seriola_lalandi_dorsalis</li><li>propithecus_coquereli</li><li>poecilia_mexicana</li><li>poecilia_latipinna</li><li>anabas_testudineus</li><li>equus_asinus_asinus</li></ul><div></body></html>
+
+
+
+
+
+
+
+
+
+http://localhost:8080/listSpecies
+
+response:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>List of Species</h1><hr>
+      <form action="listSpecies" method="get">
+        <p>Limit of species to show:</p>
+        <input type="number" name="limit">
+        <input type="submit" value="SEND">
+      </form><br>
+      <a href="/">Go Back Home</a><hr><h3>Result:</h3><ul><li>ursus_maritimus</li><li>anas_platyrhynchos_platyrhynchos</li><li>numida_meleagris</li><li>mus_caroli</li><li>mus_musculus_wsbeij</li><li>scophthalmus_maximus</li><li>macaca_mulatta</li><li>apteryx_owenii</li><li>rattus_norvegicus</li><li>ficedula_albicollis</li><li>ciona_savignyi</li><li>poecilia_latipinna</li><li>astyanax_mexicanus</li><li>mus_musculus</li><li>notechis_scutatus</li><li>colobus_angolensis_palliatus</li><li>pelodiscus_sinensis</li><li>dasypus_novemcinctus</li><li>gopherus_agassizii</li><li>mus_spretus</li><li>ictalurus_punctatus</li><li>chlorocebus_sabaeus</li><li>labrus_bergylta</li><li>crocodylus_porosus</li><li>gadus_morhua</li><li>heterocephalus_glaber_female</li><li>neovison_vison</li><li>oreochromis_niloticus</li><li>ciona_intestinalis</li><li>tetraodon_nigroviridis</li><li>ornithorhynchus_anatinus</li><li>dipodomys_ordii</li><li>carlito_syrichta</li><li>octodon_degus</li><li>xiphophorus_maculatus</li><li>lonchura_striata_domestica</li><li>gasterosteus_aculeatus</li><li>bos_taurus</li><li>anolis_carolinensis</li><li>mus_musculus_c57bl6nj</li><li>equus_caballus</li><li>phascolarctos_cinereus</li><li>piliocolobus_tephrosceles</li><li>vicugna_pacos</li><li>heterocephalus_glaber_male</li><li>caenorhabditis_elegans</li><li>echinops_telfairi</li><li>mesocricetus_auratus</li><li>chelonoidis_abingdonii</li><li>paramormyrops_kingsleyae</li><li>acanthochromis_polyacanthus</li><li>propithecus_coquereli</li><li>kryptolebias_marmoratus</li><li>ictidomys_tridecemlineatus</li><li>sphenodon_punctatus</li><li>canis_familiaris</li><li>homo_sapiens</li><li>cricetulus_griseus_crigri</li><li>mus_musculus_cbaj</li><li>latimeria_chalumnae</li><li>anabas_testudineus</li><li>spermophilus_dauricus</li><li>takifugu_rubripes</li><li>castor_canadensis</li><li>cricetulus_griseus_picr</li><li>salvator_merianae</li><li>notamacropus_eugenii</li><li>marmota_marmota_marmota</li><li>sorex_araneus</li><li>dromaius_novaehollandiae</li><li>myotis_lucifugus</li><li>pan_troglodytes</li><li>mus_musculus_nodshiltj</li><li>xiphophorus_couchianus</li><li>nomascus_leucogenys</li><li>tupaia_belangeri</li><li>cercocebus_atys</li><li>mandrillus_leucophaeus</li><li>sarcophilus_harrisii</li><li>mola_mola</li><li>pongo_abelii</li><li>scleropages_formosus</li><li>pteropus_vampyrus</li><li>mastacembelus_armatus</li><li>mus_musculus_c3hhej</li><li>pundamilia_nyererei</li><li>parus_major</li><li>urocitellus_parryii</li><li>xenopus_tropicalis</li><li>nannospalax_galili</li><li>anser_brachyrhynchus</li><li>melopsittacus_undulatus</li><li>mus_musculus_balbcj</li><li>pogona_vitticeps</li><li>poecilia_mexicana</li><li>oryzias_melastigma</li><li>danio_rerio</li><li>mus_musculus_nzohlltj</li><li>coturnix_japonica</li><li>mus_musculus_dba2j</li><li>lepisosteus_oculatus</li><li>papio_anubis</li><li>microtus_ochrogaster</li><li>manacus_vitellinus</li><li>poecilia_formosa</li><li>meleagris_gallopavo</li><li>chinchilla_lanigera</li><li>cavia_aperea</li><li>cebus_capucinus</li><li>nothoprocta_perdicaria</li><li>meriones_unguiculatus</li><li>microcebus_murinus</li><li>oryzias_latipes_hni</li><li>gambusia_affinis</li><li>tursiops_truncatus</li><li>pan_paniscus</li><li>erinaceus_europaeus</li><li>prolemur_simus</li><li>loxodonta_africana</li><li>mus_musculus_casteij</li><li>cynoglossus_semilaevis</li><li>mus_musculus_129s1svimj</li><li>mus_pahari</li><li>stegastes_partitus</li><li>equus_asinus_asinus</li><li>saimiri_boliviensis_boliviensis</li><li>jaculus_jaculus</li><li>otolemur_garnettii</li><li>taeniopygia_guttata</li><li>oryzias_latipes</li><li>oryzias_latipes_hsok</li><li>cyprinodon_variegatus</li><li>junco_hyemalis</li><li>fundulus_heteroclitus</li><li>hippocampus_comes</li><li>oryctolagus_cuniculus</li><li>bison_bison_bison</li><li>peromyscus_maniculatus_bairdii</li><li>panthera_tigris_altaica</li><li>aotus_nancymaae</li><li>amphiprion_ocellaris</li><li>rhinopithecus_roxellana</li><li>mus_musculus_fvbnj</li><li>neolamprologus_brichardi</li><li>theropithecus_gelada</li><li>zonotrichia_albicollis</li><li>apteryx_rowi</li><li>ursus_americanus</li><li>poecilia_reticulata</li><li>mustela_putorius_furo</li><li>mus_musculus_aj</li><li>mus_musculus_lpj</li><li>ailuropoda_melanoleuca</li><li>callithrix_jacchus</li><li>cyanistes_caeruleus</li><li>ovis_aries</li><li>calidris_pugnax</li><li>panthera_pardus</li><li>calidris_pygmaea</li><li>mus_musculus_akrj</li><li>esox_lucius</li><li>cricetulus_griseus_chok1gshd</li><li>sus_scrofa</li><li>choloepus_hoffmanni</li><li>rhinopithecus_bieti</li><li>gallus_gallus</li><li>eptatretus_burgeri</li><li>saccharomyces_cerevisiae</li><li>pygocentrus_nattereri</li><li>fukomys_damarensis</li><li>cavia_porcellus</li><li>mus_musculus_pwkphj</li><li>bos_mutus</li><li>procavia_capensis</li><li>periophthalmus_magnuspinnatus</li><li>seriola_lalandi_dorsalis</li><li>amphiprion_percula</li><li>maylandia_zebra</li><li>haplochromis_burtoni</li><li>ochotona_princeps</li><li>chrysemys_picta_bellii</li><li>drosophila_melanogaster</li><li>astatotilapia_calliptera</li><li>petromyzon_marinus</li><li>mus_spicilegus</li><li>felis_catus</li><li>canis_lupus_dingo</li><li>amphilophus_citrinellus</li><li>seriola_dumerili</li><li>gorilla_gorilla</li><li>serinus_canaria</li><li>capra_hircus</li><li>apteryx_haastii</li><li>macaca_fascicularis</li><li>monopterus_albus</li><li>lepidothrix_coronata</li><li>macaca_nemestrina</li><li>vulpes_vulpes</li><li>monodelphis_domestica</li></ul><div></body></html>
+
+
+
+
+
+
+
+
+
+
+http://localhost:8080/karyotype?specie=mouse
+
+response:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>Karyotype of a specie</h1><hr>
+      <form action="karyotype" method="get">
+        <p>Enter specie:</p>
+        <input type="text" name="specie">
+        <input type="submit" value="SEND">
+      </form><br>
+    <a href="/">Go Back Home</a><hr><h3>Result:</h3>Karyotype of MOUSE:<ul><li>1</li><li>2</li><li>3</li><li>4</li><li>5</li><li>6</li><li>7</li><li>8</li><li>9</li><li>10</li><li>11</li><li>12</li><li>13</li><li>14</li><li>15</li><li>16</li><li>17</li><li>18</li><li>19</li><li>X</li><li>Y</li><li>MT</li><div></body></html>
+
+
+
+
+
+
+
+
+http://localhost:8080/chromosomeLength?specie=mouse&chromo=18
+
+response:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>Chromosome lenght of a specie</h1><hr>
+      <form action="chromosomeLength" method="get">
+        <p>Enter specie:</p>
+        <input type="text" name="specie">
+        <p>Enter chromosome:</p>
+        <input type="text" name="chromo">
+        <input type="submit" value="SEND">
+      </form><br>
+      <a href="/">Go Back Home</a>
+
+<hr><h3>Result:</h3>The Chromosome 18 lenght of MOUSE: <strong>90702639</strong><div>
+
+
+
+
+
+
+
+
+http://localhost:8080/ASKJHDGBFVADS%C3%87
+
+response:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>Error 404</h1>
+      <p>Not found!</p><hr>
+      <a href="/">Go Back Home</a>
+    </div>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+http://localhost:8080/listSpecies?limit=46
+
+response:
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Final Project</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>List of Species</h1><hr>
+      <form action="listSpecies" method="get">
+        <p>Limit of species to show:</p>
+        <input type="number" name="limit">
+        <input type="submit" value="SEND">
+      </form><br>
+      <a href="/">Go Back Home</a><hr><h3>Result:</h3><ul><li>ursus_maritimus</li><li>anas_platyrhynchos_platyrhynchos</li><li>numida_meleagris</li><li>mus_caroli</li><li>mus_musculus_wsbeij</li><li>scophthalmus_maximus</li><li>macaca_mulatta</li><li>apteryx_owenii</li><li>rattus_norvegicus</li><li>ficedula_albicollis</li><li>ciona_savignyi</li><li>poecilia_latipinna</li><li>astyanax_mexicanus</li><li>mus_musculus</li><li>notechis_scutatus</li><li>colobus_angolensis_palliatus</li><li>pelodiscus_sinensis</li><li>dasypus_novemcinctus</li><li>gopherus_agassizii</li><li>mus_spretus</li><li>ictalurus_punctatus</li><li>chlorocebus_sabaeus</li><li>labrus_bergylta</li><li>crocodylus_porosus</li><li>gadus_morhua</li><li>heterocephalus_glaber_female</li><li>neovison_vison</li><li>oreochromis_niloticus</li><li>ciona_intestinalis</li><li>tetraodon_nigroviridis</li><li>ornithorhynchus_anatinus</li><li>dipodomys_ordii</li><li>carlito_syrichta</li><li>octodon_degus</li><li>xiphophorus_maculatus</li><li>lonchura_striata_domestica</li><li>gasterosteus_aculeatus</li><li>bos_taurus</li><li>anolis_carolinensis</li><li>mus_musculus_c57bl6nj</li><li>equus_caballus</li><li>phascolarctos_cinereus</li><li>piliocolobus_tephrosceles</li><li>vicugna_pacos</li><li>heterocephalus_glaber_male</li><li>caenorhabditis_elegans</li></ul><div></body></html>
+
+
+
+
+
+
+
