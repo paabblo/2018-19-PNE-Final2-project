@@ -165,7 +165,7 @@ class MyServer(BaseHTTPRequestHandler):
 
 # ----------------------------------------------
 if __name__ == '__main__':
-    PORT = 4000
+    PORT = 8080
     Handler = MyServer
     socketserver.TCPServer.allow_reuse_address = True
     with socketserver.TCPServer(("", PORT), Handler) as httpd:
