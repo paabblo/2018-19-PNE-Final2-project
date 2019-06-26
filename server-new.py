@@ -17,9 +17,15 @@ class MyServer(BaseHTTPRequestHandler):
             if len(input) == 0:
                 return False
             if input.find('='):
-                if input.find('&') > 0:
-                    first_input = input.split("&")[0]
-                    second_input = input.split("&")[1]
+                if input.find(';') > 0:
+                    separator = ';'
+                else:
+                    separator = '&'
+                print('input: '+input)              # Test
+                print('separator: '+separator)      # Test
+                if input.find(separator) > 0:
+                    first_input = input.split(separator)[0]
+                    second_input = input.split(separator)[1]
                     first_parameter = first_input.split("=")[1]
                     second_parameter = second_input.split("=")[1]
                     if first_input.split("=")[0] == "specie":
@@ -84,6 +90,7 @@ class MyServer(BaseHTTPRequestHandler):
             html_file = open("chromosomeLength.html", "r")
             html_content = html_file.read()
             parameter = self.get_parameter()
+            print('parameters: '+str(parameter))        # Test
             if parameter:
                 specie, chromo = parameter
                 html_content += "<hr><h3>Result:</h3>"
@@ -158,7 +165,7 @@ class MyServer(BaseHTTPRequestHandler):
 
 # ----------------------------------------------
 if __name__ == '__main__':
-    PORT = 8080
+    PORT = 4000
     Handler = MyServer
     socketserver.TCPServer.allow_reuse_address = True
     with socketserver.TCPServer(("", PORT), Handler) as httpd:
